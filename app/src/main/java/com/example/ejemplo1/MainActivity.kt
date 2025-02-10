@@ -39,7 +39,7 @@ fun Content(mensaje1: String, mensaje2: String) {
         Text(mensaje2,
             fontFamily = FontFamily.Cursive,
             fontSize = 34.sp)
-        Text("RMR",
+        Text("MZC",
             fontWeight = FontWeight.Bold,
             fontSize = 30.sp,
             lineHeight = 32.sp)
