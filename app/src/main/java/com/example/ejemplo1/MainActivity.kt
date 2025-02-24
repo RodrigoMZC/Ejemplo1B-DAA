@@ -19,41 +19,14 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            Ejemplo1Theme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "By MZC",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
+
         }
     }
 }
 
-@Composable
-fun GreetingText(message: String, modifier: Modifier = Modifier) {
-
-    Text(
-        text = message,
-        fontSize = 80.sp,
-        lineHeight = 116.sp
-    )
-}
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-
-    Text(
-        text = "Hello $name!",
-        //fontSize = 100.sp,
-        modifier = modifier
-    )
-}
 
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    Ejemplo1Theme {
-        GreetingText("Feliz Cunpleaños Tec!!")
-    }
+
 }
