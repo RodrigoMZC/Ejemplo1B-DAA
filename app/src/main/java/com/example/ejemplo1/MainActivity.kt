@@ -21,8 +21,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            HomeView()
-            //DetailView()
+            GreetingPreview()
         }
     }
 }
@@ -31,5 +30,6 @@ class MainActivity : ComponentActivity() {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-
+    //HomeView()
+    DetailView()
 }

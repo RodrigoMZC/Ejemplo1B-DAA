@@ -13,6 +13,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import com.example.ejemplo1.components.ActionButton
+import com.example.ejemplo1.components.TitleBar
+import com.example.ejemplo1.components.TitleView
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
@@ -22,15 +25,15 @@ fun DetailView() {
         topBar = {
             CenterAlignedTopAppBar(
                 title = {
-                    Text(
-                        "HomeView",
-                        color = Color.White
-                    )
+                    TitleBar("DetailsView")
                 },
                 colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
                     containerColor = Color.Blue
                 )
             )
+        },
+        floatingActionButton = {
+            ActionButton(Color.Blue)
         }
     ) {
         ContentView()
@@ -45,6 +48,6 @@ private fun ContentView() {
         horizontalAlignment = Alignment.CenterHorizontally
 
     ) {
-        Text(text = "Details")
+        TitleView("DetailsView")
     }
 }
