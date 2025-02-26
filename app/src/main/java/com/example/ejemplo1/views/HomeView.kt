@@ -1,6 +1,7 @@
 package com.example.ejemplo1.views
 
 import android.annotation.SuppressLint
+import android.util.Log
 import androidx.annotation.ContentView
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -17,6 +18,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.ejemplo1.components.ActionButton
+import com.example.ejemplo1.components.MainButton
+import com.example.ejemplo1.components.Spacers
 import com.example.ejemplo1.components.TitleBar
 import com.example.ejemplo1.components.TitleView
 
@@ -39,7 +42,7 @@ fun HomeView() {
             ActionButton(Color.Red)
         }
     ) {
-        ContentView()
+        com.example.ejemplo1.views.ContentView()
     }
 }
 
@@ -53,5 +56,10 @@ private fun ContentView() {
 
     ) {
         TitleView("HomeView")
+        Spacers()
+
+        MainButton("MainButton", Color.Red, Color.White) {
+            Log.d("","Soy un boton generico")
+        }
     }
 }

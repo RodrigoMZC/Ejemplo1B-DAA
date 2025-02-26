@@ -30,6 +30,6 @@ class MainActivity : ComponentActivity() {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    //HomeView()
-    DetailView()
+    HomeView()
+    //DetailView()
 }
